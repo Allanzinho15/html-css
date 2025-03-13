@@ -16,8 +16,9 @@ header{
 
 }
 header > h1{
-    padding: 50px;
+    padding-top: 50px;
     font-variant: small-caps;
+
 
 }
 header > p{
@@ -32,6 +33,7 @@ a{
 a:hover{
     text-decoration: underline;
 }
+
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -40,24 +42,26 @@ section{
 
 }
 
-section.normal{
+.normal{
     background-color: white;
     color: black;
 
 }
-section.imagem{
-    background-color: rgb(51, 51, 51);
-    color: white;
+.imagem{
+    background-color: rgba(51, 51, 51);
+    color: rgb(255, 255, 255);
 
 }
-section.imagem > p{
+
+.imagem > p{
+    background-color: rgba(0, 0, 0, 0.253);
     width: 400px;
-    color: rgb(0 , 0, 0.253);
+   
 }
 
 footer{
     background-color: black;
     color: white;
-    text-decoration: center;
+    text-align: center;
     padding: 10px;
 }
