@@ -5,24 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>teste de cadastro</title>
     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
         body{ 
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            background-color: cadetblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 20px;
         }
-        form{
-            position: relative;
-            bottom: 15px;
-            background-color: aqua; 
-            padding: 15px;
+        .allan{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
             border: 2px solid black;
             border-radius: 10px;
             width: 400px;
             height: 400px;
-            text-align: center;
+           
         }
         div{
             padding: 15px;
@@ -34,19 +41,22 @@
 </head>
 <body>
     <h1>cadastro</h1>
-    <form action="" method="post" autocomplete="off">
-        <div>
-            <label for="iusuario">Usuario</label>
-            <input type="text" name="usuario" id="iusuario" required minlength="10" maxlength="15" placeholder="Nome Do Usuario">
-        </div>
-        <div>
-            <label for="isenha">Senha</label>
-            <input type="password" name="senha" id="isenha" required minlength="5" maxlength="10" placeholder="Senha Do Usuario">
-        </div>
-        <div>
-            <input type="submit" value="ENVIAR">
-            <input type="reset" value="EXCLUIR">
-        </div>
-    </form>
+    <div class="allan">
+        
+        <form action="" method="post" autocomplete="off">
+            <div>
+                <label for="iusuario">Usuario</label>
+                <input type="text" name="usuario" id="iusuario" required minlength="10" maxlength="15" placeholder="Nome Do Usuario">
+            </div>
+            <div>
+                <label for="isenha">Senha</label>
+                <input type="password" name="senha" id="isenha" required minlength="5" maxlength="10" placeholder="Senha Do Usuario">
+            </div>
+            <div>
+                <input type="submit" value="ENVIAR">
+                <input type="reset" value="EXCLUIR">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
