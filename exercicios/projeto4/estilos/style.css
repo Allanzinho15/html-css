@@ -85,8 +85,8 @@ div.campo > label{
    border-radius: 8px;
    padding: 0px;
    margin: auto;
-   width: calc(100% - 51px);
-   transform: translateY(-13px);
+   width: calc(100% - 50px);
+   transform: translatey(-12px);
    
 }
 .enter{
